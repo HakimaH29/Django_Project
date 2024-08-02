@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}About us{% endblock %}
+
+{% block temp_content %}
+{% load static %}
+    <h1><center>Our Philosophy</center></h1>
+
+<div class="about">
+    <h3>We are built upon the premise that we are here to help each other. 
+    Once you have entered your information, please log into the portal so that we may begin your search. Whether it is jobs, babysitters, or homes you are loooking for, we will assist you with the resources that will help you locate what you are looking for in your community. 
+    Our network is built by a team of professionals who are dedicated to serving every member on this platform. We ask that you abide by our privacy policy and not disclose any information outside The Network.</h3>
+
+    <img src="{% static 'images/connection.jpg' %}" class="pic">
+</div>    
+
+{% endblock %}

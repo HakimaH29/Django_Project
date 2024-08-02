@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Registration{% endblock %}
+
+{% block temp_content %}
+    <h1>Welcome to the Registration page!</h1>
+    <h3> Please submit the information below so we can create a profile for you. Once you are logged in, you will be a member of The Network and can commence your search. </h3>
+
+    <div id="profile_questions">
+        <form method="post">
+        {% csrf_token %}
+        <input type="name" placeholder="User Name" name="username">
+        <input type="email" placeholder="User Email" name="useremail">
+        <input type="password" placeholder="User Password" name="password1">
+        <input type="password" placeholder="Repeat Password" name="password2">
+        <input type="submit" value="Register!">
+        </form>
+    </div>
+    {% if messages %}
+        {% for item in messages %}
+            <p>{{item}}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,195 @@
+body {
+background-color: rgb(186, 208, 240); 
+width: 90%;
+margin: 0 auto;
+}
+
+.intro {
+   background-color: #e5eff3;
+   color:#302e2e; 
+   text-shadow: 1px 1px 3px #666666;
+   margin-left: 20%;
+   margin-right: 20%;
+   text-align: center;
+}
+
+.dropbutton {
+    background-color: #9ccaea;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: black;
+    font-size: large;
+    padding: 12px 16px;
+    display: block;
+  }
+
+.dropdown_content a:hover {background-color: #5a748d;} 
+.dropdown:hover .dropdown_content {display: block;}
+.dropdown:hover .dropbutton {background-color: #1f5b80;}
+
+  input {
+    font-size: 100%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1 px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 3px; 
+    margin-bottom: 10px;
+    display: block;
+}
+.network {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #4c5960;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #91e0e1;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #7a6e6e;
+    padding: 20px;
+  }
+  * {box-sizing: border-box}
+
+  /* design the login container */
+  .login {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+  }
+  
+  /* design the input forms and the link buttons in our login form*/
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; 
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fb {
+    background-color: #1452d8;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #374652;
+    color: white;
+  }
+  
+  .google {
+    background-color: #a43e31;
+    color: white;
+  }
+  
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #d3c3c3;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .inner {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+ 
+  .bottom-container {
+    text-align: center;
+    background-color: #395196;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .quotes {
+    text-align: center;
+    font-weight: 900;
+    background-color: #eeeff0;
+    gap: 200px; 
+    font-size: large;
+  }
+
+  .pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+  }

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block temp_content %}
+{% load static %}
+<h1><center>{{home_heading}}</center></h1>
+        
+            <hr>
+
+            <div class="intro"> 
+            <h3>Welcome to our website.</h3>
+            <h3>This is The Network, the one and only network you will need to thrive in your society. This is where you can create connections.
+            Connections that will impact every aspect of your life.  
+            Do start your registration so you may begin your serach. </h3>
+            </div> 
+
+            <hr>
+
+            <div class="home_image">   
+            <img src="{% static 'images/network.jpg' %}"  class="network" height="300" width="1400">
+            </div>
+
+            <hr>       
+            <div class="quotes">
+            <p>{{my_dictionary.item_one}}</p>
+            <p>{{my_dictionary.item_two}}</p>
+            <p>{{my_dictionary.item_three}}</p>
+            </div>
+{% endblock %}

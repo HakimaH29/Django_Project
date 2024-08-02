@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block temp_content %}
+    <h1><center>Please login here to have access to our platform!</center></h1>
+
+    <div class="login">
+        <form method="post">
+            {% csrf_token %}
+          <div class="row">
+            <h2 style="text-align:center">Login with Social Media or Manually</h2>
+            <div class="vl">
+              <span class="vl-innertext">or</span>
+            </div>
+      
+            <div class="col">
+              <a href="facebook.com" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+              </a>
+              <a href="x.com" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with X
+              </a>
+              <a href="google.com" class="google btn">
+                <i class="fa fa-google fa-fw"></i> Login with Google+
+              </a>
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <h3>Or Sign In Manually:<h3>
+              </div>
+      
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" value="Login">
+            </div>
+      
+          </div>
+        </form>
+      </div>
+      
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="/register" style="color:white" class="btn"><center>Create An Account</center></a>
+        </div>
+        <div class="col">
+            <a href="/contact_us" style="color:white" class="btn">Questions?</a>
+          </div>
+      </div>
+     </div> 
+
+    {% if messages %}
+        {% for item in messages %}
+            <p>{{item}}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

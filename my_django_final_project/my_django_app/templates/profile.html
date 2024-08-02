@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block temp_content %}
+    <h1>Welcome to your profile page!</h1>
+    <p>Your name is - {{name}}</p>
+    <p>Your age is - {{age}}</p>
+    <p>Your email is - {{email}}</p>
+    <p>Your city is - {{city}}</p>
+    <img src="{{profile_image}}" height="100" width="100">
+{% endblock %}

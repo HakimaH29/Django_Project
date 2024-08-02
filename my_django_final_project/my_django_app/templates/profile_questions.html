@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile questions{% endblock %}
+
+{% block temp_content %}
+    <h1>Welcome to the profile page!</h1>
+    <h3>Please fill in the form to help us create a profile for you!</h3>
+    <!-- This is where we create the form for the profile creation. -->
+<div id="proflie_questions>"
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" placeholder="User Name" name="u_name">
+        <input type="text" placeholder="User Age" name="u_age">
+        <input type="text" placeholder="User City" name="u_city">
+        <input type="text" placeholder="User Email" name="u_email">
+        <input type="file" placeholder="User Image" name="u_image">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
